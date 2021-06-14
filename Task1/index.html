@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Task-1</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.js"></script>
 </head>
+
 <body>
-    
+    <div class="container contact" style="margin-top: 10%;">
+        <div class="row justify-content-center">
+            <div class="col-md-3">
+                <div class="contact-info">
+                    <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image" />
+                    <h2>Contact Us</h2>
+                    <h4>We would love to hear from you !</h4>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <div class="form-group">
+                        <div class="col-sm-10 mt-3">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="text" class="form-control" id="fname" placeholder="Enter Name"
+                                        name="fname">
+                                </div>
+                                <div class="col">
+                                    <input type="email" class="form-control" id="femail" placeholder="Enter Email"
+                                        name="femail">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10 mt-3">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="password" class="form-control" id="fpassword"
+                                        placeholder="Enter Password" name="fpassword">
+                                </div>
+                                <div class="col">
+                                    <input type="tel" class="form-control" id="fphone" placeholder="Enter Phone"
+                                        name="fphone">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-5 mt-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Gender</option>
+                                <option value="1">Woman</option>
+                                <option value="2">Man</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-10  mt-3">
+                            <textarea class="form-control" rows="5" id="comment"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-10 col-sm-10 mt-3">
+                            <div class="row justify-content-end">
+                                <div class="col-3">
+                                    <button type="submit" class="btn btn-outline-primary">Submit Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
