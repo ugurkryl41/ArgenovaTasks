@@ -52,6 +52,39 @@
         margin-bottom: 10px;
         margin-right: 10px;
     }
+
+    @media screen and (min-width:1440px) {
+        div#header1 {
+            display: initial;
+        }
+
+        img#logoimg1 {
+            width: 100%;
+            height: 100%;
+        }
+
+        img#imglogo {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    @media screen and (max-width:1440px) {
+        div#header1 {
+            display: none;
+        }
+
+        img#logoimg1 {
+            width: 15vw;
+            height: 5vh;
+            padding-top: 1vh;
+        }
+
+        img#imglogo {
+            width: 4vw;
+            height: 4vh;
+        }
+    }
 </style>
 
 <body>
@@ -59,27 +92,24 @@
         <div class="container contact">
             <div class="row justify-content-between">
                 <div class="col-3 mt-3">
-                    <img src="images/logo-dark.png" width="100%" height="60%">
+                    <img src="images/logo-dark.png" id="logoimg1">
                 </div>
-                <div class="col-sm-6 mt-3" style="margin-right: 10%;">
+                <div class="col-sm-6 mt-3" style="margin-right: 10%;" id="header1">
                     <div class="row justify-content-end">
                         <div class="col-4">
-                            <img src="images/location.jpeg" height="30px" width="30px"
-                                style="float: left; margin-right: 5%;">
+                            <img src="images/location.jpeg" id="imglogo" style="float: left; margin-right: 5%;">
                             <span class="fw-bold" style="font-size: small;">Adress:</span>
                             <br>
                             <span style="font-size: small;">New Jesrsy, 1201, USA</span>
                         </div>
                         <div class="col-3">
-                            <img src="images/home.jpg" height="30px" width="30px"
-                                style="float: left; margin-right: 5%;">
+                            <img src="images/home.jpg" id="imglogo" style="float: left; margin-right: 5%;">
                             <span class="fw-bold" style="font-size: small;">Email:</span>
                             <br>
                             <span style="font-size: small;">info@info.com</span>
                         </div>
                         <div class="col-3">
-                            <img src="images/phone.jpg" height="30px" width="30px"
-                                style="float: left; margin-right: 5%;">
+                            <img src="images/phone.jpg" id="imglogo" style="float: left; margin-right: 5%;">
                             <span class="fw-bold" style="font-size: small;">Phone:</span>
                             <br>
                             <span style="font-size: small;">(123) 222-8888</span>
@@ -121,11 +151,11 @@
                 <form class="d-flex" style="margin-right: 10%;">
                     <div class="row justify-content-start">
                         <div class="col align-self-center">
-                            <a href="#"><img src="images/search.png" alt="" width="20px" height="20px">
+                            <a href="#"><img src="images/search.png" alt="" id="imglogo">
                                 <span class="text-light fw-bold"> | </span></a>
-                            <a href="#"><img src="images/f.png" alt="" width="20px" height="20px"></a>
-                            <a href="#"><img src="images/t.png" alt="" width="20px" height="20px"></a>
-                            <a href="#"><img src="images/i.png" alt="" width="20px" height="20px"></a>
+                            <a href="#"><img src="images/f.png" alt="" id="imglogo"></a>
+                            <a href="#"><img src="images/t.png" alt="" id="imglogo"></a>
+                            <a href="#"><img src="images/i.png" alt="" id="imglogo"></a>
                         </div>
                     </div>
                 </form>
@@ -139,8 +169,8 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-sm-6" style="padding-top: 5%;  text-align: center;">
-                        <p class="fw-bold"
-                            style="font-size: xx-large ; color: dodgerblue; filter: brightness(100%); "> Open Source
+                        <p class="fw-bold" style="font-size: xx-large ; color: dodgerblue; filter: brightness(100%); ">
+                            Open Source
                             Job
                             Report Show More Openings Fewer </p>
                         <a class="text-light mt-4" href="index.html">Home / <a class="text-light" href="blog.html">Blog
@@ -179,8 +209,10 @@
                                             again today,
                                             and then add the burden of the morrow before we are required to bear it.
                                         </span>
-                                        <hr style="color: navy; height: 2px; width: 8%; float: left; margin-right: 3%;">
-                                        <span>Uğur.</span>
+                                        <p>
+                                            <hr style="color: navy; height: 2px; width: 8%; float: left; margin-right: 3%;">
+                                            <span>Uğur.</span>
+                                        </p>
                                     </div>
                                 </div>
                             </article>
@@ -229,8 +261,12 @@
                                             again today,
                                             and then add the burden of the morrow before we are required to bear it.
                                         </span>
+                                        <p>
                                         <hr style="color: navy; height: 2px; width: 8%; float: left; margin-right: 3%;">
-                                        <span>Admin.</span>
+                                        
+                                            <span>Admin.</span>
+                                        </p>
+
                                     </div>
                                 </div>
                             </article>
@@ -240,7 +276,7 @@
                                 <div class="col-sm-10">
                                     <div class="contact-form">
                                         <span class="fw-bold" style="font-size: x-large;">Leave a Reply</span>
-        
+
                                         <div class="form-group">
                                             <div class="col-sm-12 mt-3">
                                                 <div class="row">
@@ -255,13 +291,13 @@
                                                 </div>
                                             </div>
                                         </div>
-        
+
                                         <div class="form-group">
                                             <div class="col-sm-12  mt-3">
                                                 <textarea class="form-control" rows="5" id="comment"></textarea>
                                             </div>
-                                        </div>  
-    
+                                        </div>
+
                                         <div class="form-group">
                                             <div class="col-sm-offset-12 col-sm-12 mt-3">
                                                 <div class="row justify-content-end">
@@ -271,7 +307,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>  
+                                        </div>
                                     </div>
                                 </div>
                             </div>

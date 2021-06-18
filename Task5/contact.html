@@ -25,6 +25,39 @@
         color: silver;
         text-shadow: 1px 1px steelblue;
     }
+
+    @media screen and (min-width:1440px) {
+        div#header1 {
+            display: initial;
+        }
+
+        img#logoimg1 {
+            width: 100%;
+            height: 100%;
+        }
+
+        img#imglogo {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    @media screen and (max-width:1440px) {
+        div#header1 {
+            display: none;
+        }
+
+        img#logoimg1 {
+            width: 15vw;
+            height: 5vh;
+            padding-top: 1vh;
+        }
+
+        img#imglogo {
+            width: 4vw;
+            height: 4vh;
+        }
+    }
 </style>
 
 <body>
@@ -32,27 +65,24 @@
         <div class="container contact">
             <div class="row justify-content-between">
                 <div class="col-3 mt-3">
-                    <img src="images/logo-dark.png" width="100%" height="60%">
+                    <img src="images/logo-dark.png" id="logoimg1">
                 </div>
-                <div class="col-sm-6 mt-3" style="margin-right: 10%;">
+                <div class="col-sm-6 mt-3" style="margin-right: 10%;" id="header1">
                     <div class="row justify-content-end">
                         <div class="col-4">
-                            <img src="images/location.jpeg" height="30px" width="30px"
-                                style="float: left; margin-right: 5%;">
+                            <img src="images/location.jpeg" style="float: left; margin-right: 5%;" id="imglogo">
                             <span class="fw-bold" style="font-size: small;">Adress:</span>
                             <br>
                             <span style="font-size: small;">New Jesrsy, 1201, USA</span>
                         </div>
                         <div class="col-3">
-                            <img src="images/home.jpg" height="30px" width="30px"
-                                style="float: left; margin-right: 5%;">
+                            <img src="images/home.jpg" style="float: left; margin-right: 5%;" id="imglogo">
                             <span class="fw-bold" style="font-size: small;">Email:</span>
                             <br>
                             <span style="font-size: small;">info@info.com</span>
                         </div>
                         <div class="col-3">
-                            <img src="images/phone.jpg" height="30px" width="30px"
-                                style="float: left; margin-right: 5%;">
+                            <img src="images/phone.jpg" style="float: left; margin-right: 5%;" id="imglogo">
                             <span class="fw-bold" style="font-size: small;">Phone:</span>
                             <br>
                             <span style="font-size: small;">(123) 222-8888</span>
@@ -93,11 +123,11 @@
                 <form class="d-flex" style="margin-right: 10%;">
                     <div class="row justify-content-start">
                         <div class="col align-self-center">
-                            <a href="#"><img src="images/search.png" alt="" width="20px" height="20px">
+                            <a href="#"><img src="images/search.png" alt="" id="imglogo">
                                 <span class="text-light fw-bold"> | </span></a>
-                            <a href="#"><img src="images/f.png" alt="" width="20px" height="20px"></a>
-                            <a href="#"><img src="images/t.png" alt="" width="20px" height="20px"></a>
-                            <a href="#"><img src="images/i.png" alt="" width="20px" height="20px"></a>
+                            <a href="#"><img src="images/f.png" alt="" id="imglogo"></a>
+                            <a href="#"><img src="images/t.png" alt="" id="imglogo"></a>
+                            <a href="#"><img src="images/i.png" alt="" id="imglogo"></a>
                         </div>
                     </div>
                 </form>
@@ -111,8 +141,9 @@
             <div class="container">
                 <div class="col-3" style="padding-top: 8%;">
                     <p class="text-light fw-bold" style="font-size: xx-large ; margin-bottom: -2%;"> Contact </p>
-                    <a class="text-light" href="index.html">Home / <span style="color: cadetblue;" class="fw-bold">Contact</span></a>
-                    
+                    <a class="text-light" href="index.html">Home / <span style="color: cadetblue;"
+                            class="fw-bold">Contact</span></a>
+
                 </div>
             </div>
         </div>
@@ -246,7 +277,7 @@
                         width="100%" height="400px"></iframe>
                 </div>
             </div>
-            <div class="row align-items-center mt-4 " >
+            <div class="row align-items-center mt-4 ">
                 <!-- Grid row -->
                 <div class="row justify-content-center">
                     <!-- Grid column -->
@@ -265,8 +296,8 @@
                     <!-- Grid column -->
                     <div class="col-md-2 mb-md-0 mb-3">
                         <h5 class="fw-bold"> IT Services </h5>
-                        <a href="" class="link-secondary"> Software Development </a>                        
-                        <a href="" class="link-secondary"> Web Development </a>                       
+                        <a href="" class="link-secondary"> Software Development </a>
+                        <a href="" class="link-secondary"> Web Development </a>
                         <a href="" class="link-secondary"> Analytic Solutions </a>
                         <a href="" class="link-secondary"> Cloud and DevOps</a>
                         <a href="" class="link-secondary"> Project Design</a>
@@ -288,7 +319,7 @@
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Your Mail Adress">
                             <button class="btn btn-outline-primary" type="submit">Sign</button>
-                          </form>
+                        </form>
                     </div>
                     <!-- Grid column -->
                 </div>
@@ -297,7 +328,7 @@
         </div>
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            
+
         </div>
         <!-- Copyright -->
     </footer>
